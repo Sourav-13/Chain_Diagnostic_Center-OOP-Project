@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.GenerateTestReportController">
+   <children>
+      <TextArea fx:id="reportTextArea" layoutX="51.0" layoutY="153.0" prefHeight="200.0" prefWidth="257.0" promptText="Write your Report here" />
+      <Button layoutX="50.0" layoutY="361.0" mnemonicParsing="false" onAction="#generateTextReportPDFOnClick" text="Generate Test Report" />
+      <Button fx:id="dashboardButton" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#dashboardSceneOnCick" text="Dashboard" />
+      <TextField fx:id="TypeOfTest" layoutX="51.0" layoutY="118.0" promptText="Type of Test" />
+      <TextField fx:id="patientName" layoutX="51.0" layoutY="52.0" promptText="Patient name" />
+      <TextField fx:id="patientID" layoutX="51.0" layoutY="85.0" promptText="Patient ID" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.PatientAppointmentSceneController">
+   <children>
+      <TableView layoutY="-2.0" prefHeight="400.0" prefWidth="159.0">
+        <columns>
+          <TableColumn prefWidth="158.0" text="Available Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="281.0" layoutY="22.0" text="Patient Information">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="210.0" text="Appointment Information">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="187.0" layoutY="77.0" promptText="Enter Full Name*" />
+      <TextField layoutX="348.0" layoutY="117.0" promptText="Phone Number*" />
+      <DatePicker layoutX="297.0" layoutY="255.0" promptText="Appointment Date*" />
+      <TextField layoutX="348.0" layoutY="77.0" promptText="Email Address*" />
+      <Button layoutX="325.0" layoutY="343.0" mnemonicParsing="false" text="Book Appointment" />
+      <ComboBox layoutX="504.0" layoutY="117.0" prefHeight="25.0" prefWidth="89.0" promptText="Gender*" />
+      <TextField layoutX="187.0" layoutY="117.0" promptText="Patient ID*" />
+      <TextField layoutX="309.0" layoutY="296.0" promptText="Time for appointment" />
+      <Button fx:id="dashboardButton" layoutX="175.0" layoutY="26.0" mnemonicParsing="false" onAction="#dashboardSceneOnCick" text="Dashboard" />
+   </children>
+</AnchorPane>

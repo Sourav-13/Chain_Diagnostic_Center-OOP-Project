@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.PatientAppointmentSceneController">
+   <children>
+      <Label layoutX="198.0" layoutY="28.0" text="Patient Information">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="200.0" text="Appointment Information">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="42.0" layoutY="67.0" promptText="Enter Full Name*" />
+      <TextField layoutX="234.0" layoutY="107.0" promptText="Phone Number*" />
+      <TextField layoutX="427.0" layoutY="67.0" prefHeight="25.0" prefWidth="43.0" promptText="Age*" />
+      <DatePicker layoutX="30.0" layoutY="244.0" promptText="Appointment Date*" />
+      <TextField layoutX="234.0" layoutY="67.0" promptText="Email Address*" />
+      <Button layoutX="30.0" layoutY="15.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="449.0" layoutY="334.0" mnemonicParsing="false" text="Book Appointment" />
+      <ComboBox layoutX="42.0" layoutY="163.0" prefWidth="150.0" promptText="Branch" />
+      <ComboBox layoutX="425.0" layoutY="107.0" prefHeight="25.0" prefWidth="89.0" promptText="Gender*" />
+      <ComboBox layoutX="264.0" layoutY="244.0" prefHeight="25.0" prefWidth="89.0" promptText="Time*" />
+      <TextField layoutX="42.0" layoutY="107.0" promptText="Patient ID*" />
+   </children>
+</AnchorPane>

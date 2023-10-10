@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ReceptionistDashboardSceneController">
+    <children>
+      <TabPane layoutY="219.0" prefHeight="330.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Doctors">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="133.0" layoutY="20.0" prefHeight="270.0" prefWidth="277.0">
+                          <columns>
+                            <TableColumn prefWidth="276.0" text="Name" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="tempAppointmentButton" layoutX="358.0" layoutY="119.0" mnemonicParsing="false" onAction="#tempPatientAppointmentButtonOnClick" text="temp button to go to patient appointment" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Patient">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="registerPatientButton" layoutX="55.0" layoutY="51.0" mnemonicParsing="false" onAction="#registerAPatientButtonOnClick" text="Register a Patient" />
+                        <Button fx:id="queriesButton" layoutX="55.0" layoutY="109.0" mnemonicParsing="false" onAction="#viewQueryListButtonOnClick" text="Queries" />
+                        <TextField layoutX="55.0" layoutY="234.0" promptText="Patient's phone number" />
+                        <Button layoutX="204.0" layoutY="234.0" mnemonicParsing="false" text="Search" />
+                        <Label layoutX="272.0" layoutY="237.0" prefHeight="19.0" prefWidth="191.0" style="-fx-border-color: black;" />
+                        <Button fx:id="proceedToPayBillButton" layoutX="476.0" layoutY="234.0" mnemonicParsing="false" onAction="#goToBillPaySceneButtonOnClick" text="Proceed to Pay Bill" />
+                        <Button fx:id="admitPatientButton" layoutX="55.0" layoutY="166.0" mnemonicParsing="false" onAction="#patientAdmissionSceneOnClick" text="Admit Patient to Bed/Cabin" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Laboratory">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="bookTestButton" layoutX="51.0" layoutY="126.0" mnemonicParsing="false" onAction="#goToBookingTesetSceneButtonOnClick" text="Book Test" />
+                        <TextField fx:id="patientName" layoutX="51.0" layoutY="42.0" promptText="Patient Name" />
+                        <TextField fx:id="testName" layoutX="51.0" layoutY="81.0" promptText="Name of Test" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="483.0" layoutY="14.0" text="Reciptionist's name" />
+      <Label layoutX="40.0" layoutY="105.0" text="Number of patient visited today" />
+   </children>
+</AnchorPane>

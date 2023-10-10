@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.QueryReplySceneController">
+    <children>
+      <Label layoutX="33.0" layoutY="56.0" text="Patient ID:" />
+      <Label layoutX="126.0" layoutY="56.0" />
+      <Label layoutX="33.0" layoutY="88.0" text="Patient Name:" />
+      <Label layoutX="126.0" layoutY="88.0" />
+      <TextArea layoutX="29.0" layoutY="206.0" prefHeight="191.0" prefWidth="592.0" promptText="Write a reply" />
+      <Button layoutX="275.0" layoutY="432.0" mnemonicParsing="false" text="Reply" />
+      <Label layoutX="33.0" layoutY="127.0" text="Query" />
+      <Button fx:id="dashboardButton" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#dashboardSceneOnCick" text="Dashboard" />
+   </children>
+</AnchorPane>

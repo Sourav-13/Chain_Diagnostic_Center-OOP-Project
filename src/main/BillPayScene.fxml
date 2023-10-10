@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.BillPaySceneController">
+   <children>
+      <Label layoutX="257.0" layoutY="14.0" text="Bill Pay">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="71.0" text="Patient Name:" />
+      <Label layoutX="141.0" layoutY="71.0" text="name" />
+      <Label layoutX="248.0" layoutY="100.0" text="Patient ID:" />
+      <Label layoutX="348.0" layoutY="100.0" text="id" />
+      <Label layoutX="42.0" layoutY="100.0" text="Patient Age:" />
+      <Label layoutX="142.0" layoutY="100.0" text="age" />
+      <Label layoutX="41.0" layoutY="128.0" text="Patient Gender:" />
+      <Label layoutX="141.0" layoutY="128.0" text="gender" />
+      <Label layoutX="248.0" layoutY="71.0" text="Phone Number:" />
+      <Label layoutX="348.0" layoutY="71.0" text="no." />
+      <TableView layoutX="19.0" layoutY="164.0" prefHeight="245.0" prefWidth="560.0">
+        <columns>
+          <TableColumn prefWidth="381.0" text="Items" />
+          <TableColumn minWidth="0.0" prefWidth="65.0" text="Quantity" />
+            <TableColumn prefWidth="113.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="dashboardButton" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#dashboardSceneOnCick" text="Dashboard" />
+      <Button layoutX="274.0" layoutY="419.0" mnemonicParsing="false" text="Pay Bill" />
+   </children>
+</AnchorPane>

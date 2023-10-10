@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.PatientRegisterSceneController">
+   <children>
+      <TextField fx:id="nameTxt" layoutX="26.0" layoutY="61.0" promptText="Patient Name" />
+      <TextField fx:id="nidTxt" layoutX="257.0" layoutY="104.0" promptText="NID No" />
+      <TextField fx:id="phoneTxt" layoutX="257.0" layoutY="61.0" promptText="Mobile No" />
+      <DatePicker fx:id="dobDatePicker" layoutX="26.0" layoutY="104.0" promptText="Date Of Birth" />
+      <ComboBox fx:id="genderComboBox" layoutX="26.0" layoutY="150.0" onAction="#gendersIsSelected" prefHeight="25.0" prefWidth="89.0" promptText="Gender" />
+      <Button fx:id="registerButton" layoutX="514.0" layoutY="350.0" mnemonicParsing="false" onAction="#registerPatientButtonOnClick" text="Register" />
+      <Button fx:id="dashboardButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#dashboardSceneOnCick" text="Dashboard" />
+      <Label layoutX="183.0" layoutY="14.0" text="Patient Registration">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

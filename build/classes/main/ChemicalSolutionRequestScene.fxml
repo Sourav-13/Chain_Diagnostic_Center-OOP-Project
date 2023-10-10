@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ChemicalSolutionRequestSceneController">
+   <children>
+      <Label layoutX="160.0" layoutY="20.0" text="Chemical Solutions to request">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="requestButton" layoutX="271.0" layoutY="361.0" mnemonicParsing="false" onAction="#requestPharmacyForChemicalSolutionButtonOnClick" text="Request" />
+      <Button fx:id="dashboardButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#dashboardSceneOnCick" text="Dashboard" />
+      <TextField fx:id="labRoomNum" layoutX="23.0" layoutY="116.0" promptText="Lab Room number" />
+      <TextArea fx:id="chemicalNameForRequestTxtArea" layoutX="23.0" layoutY="170.0" prefHeight="111.0" prefWidth="281.0" promptText="Chemical Solution Name" />
+      <TextField fx:id="labTechnicianNameTxt" layoutX="23.0" layoutY="77.0" promptText="Name" />
+      <TextField fx:id="labTechnicianIdTxt" layoutX="181.0" layoutY="77.0" promptText="ID" />
+   </children>
+</AnchorPane>

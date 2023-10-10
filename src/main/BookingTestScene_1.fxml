@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpackage.BookingTestSceneController">
+   <children>
+      <TextField layoutX="46.0" layoutY="50.0" promptText="Enter Full Name*" />
+      <TextField layoutX="46.0" layoutY="124.0" promptText="Phone Number*" />
+      <TextField layoutX="46.0" layoutY="159.0" promptText="Email Address*" />
+      <ComboBox layoutX="27.0" layoutY="285.0" prefWidth="150.0" promptText="Branch" />
+      <ComboBox layoutX="47.0" layoutY="237.0" prefHeight="25.0" prefWidth="89.0" promptText="Gender*" />
+      <TextField layoutX="46.0" layoutY="200.0" prefHeight="25.0" prefWidth="43.0" promptText="Age*" />
+      <TableView layoutX="255.0" layoutY="50.0" prefHeight="200.0" prefWidth="225.0">
+         <columns>
+            <TableColumn prefWidth="118.00006103515625" text="Test" />
+            <TableColumn prefWidth="104.66668701171875" text="Price" />
+         </columns>
+      </TableView>
+      <DatePicker layoutX="193.0" layoutY="285.0" promptText="Test Date*" />
+      <ComboBox layoutX="390.0" layoutY="285.0" prefHeight="25.0" prefWidth="89.0" promptText="Time*" />
+      <Button layoutX="27.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+      <Button layoutX="497.0" layoutY="344.0" mnemonicParsing="false" text="Book Test" />
+      <TextField layoutX="46.0" layoutY="85.0" promptText="Patient ID*" />
+   </children>
+</AnchorPane>

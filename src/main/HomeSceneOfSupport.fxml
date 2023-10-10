@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.HomeSceneOfSupportController">
+   <children>
+      <Label layoutX="121.0" prefHeight="37.0" prefWidth="363.0" text="Dashboard: Head Of Support Service" textAlignment="CENTER" textFill="#863838">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="498.0" endY="-3.814697265625E-6" layoutX="106.0" layoutY="39.0" startX="-105.99999237060547" startY="-3.814697265625E-6" />
+      <MenuButton fx:id="serviceMenuButton" layoutX="41.0" layoutY="62.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="159.0" text="Provide Support Service">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#foodMenuItemOnClick" text="Food Service" />
+          <MenuItem mnemonicParsing="false" onAction="#cleanLaundryMenuItemOnClick" text="Clean &amp; Laundry Service" />
+            <MenuItem mnemonicParsing="false" onAction="#ambulanceMenuItemOnClick" text="Ambulance Service" />
+        </items>
+      </MenuButton>
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#prevSceneButtonOnClick" text="Previous Scene" />
+      <Button layoutX="530.0" layoutY="360.0" mnemonicParsing="false" onAction="#signOutButtonOnClick" text="Sign out" />
+      <VBox layoutX="232.0" layoutY="62.0" prefHeight="306.0" prefWidth="222.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#medicalSuppliesButtonOnClick" prefHeight="67.0" prefWidth="233.0" text="Deliver Safety Gear" />
+            <Button mnemonicParsing="false" onAction="#bloodReqButtonOnClick" prefHeight="59.0" prefWidth="225.0" text="Blood Request" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#euipReqButtonOnClick" prefHeight="58.0" prefWidth="225.0" text="Apply For Equipment Request" />
+            <Button mnemonicParsing="false" onAction="#changeShiftButtonOnClick" prefHeight="58.0" prefWidth="224.0" text="Change shifts of Security Guards" />
+            <Button mnemonicParsing="false" onAction="#monitorSugComButtonOnClick" prefHeight="56.0" prefWidth="229.0" text="Monitor Suggestion and Complain" />
+         </children>
+      </VBox>
+      <Label fx:id="idLabel" layoutX="567.0" layoutY="62.0" text="Label" />
+      <Label fx:id="nameLabel" layoutX="567.0" layoutY="74.0" text="Label" />
+      <Label fx:id="branchLabel" layoutX="567.0" layoutY="91.0" text="Label" />
+      <Label layoutX="536.0" layoutY="62.0" text="ID:" />
+      <Label layoutX="526.0" layoutY="74.0" text="Name:" />
+      <Label layoutX="526.0" layoutY="91.0" text="Branch" />
+   </children>
+</AnchorPane>
